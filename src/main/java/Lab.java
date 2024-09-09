@@ -18,6 +18,15 @@ public class Lab {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+        Animal dog = new Animal();
+        dog.speak();
+
+
+        return dog;
+    }
+    class Animal{
+        void speak(){
+            System.out.println("bark");
+        }
     }
 }
